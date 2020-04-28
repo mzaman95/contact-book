@@ -1,0 +1,11 @@
+<mat-card class="contact-card">
+      <mat-card-header>
+            <mat-card-title>{{ contact.name }}</mat-card-title>
+            <mat-card-subtitle>{{ contact.company }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="contact.imageurl" style="max-height:300px;">
+      <mat-card-content>
+            <p><i class="material-icons">email</i> {{ contact.email }}</p>
+            <p><i class="material-icons">call</i> {{ contact.phone }}</p>
+      </mat-card-content>
+</mat-card>
